@@ -22,22 +22,25 @@
         header {
             text-align: center;
             padding: 30px 0;
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            background: #1a1a1a; /* Тёмно-серый */
             color: white;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid #333;
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            color: #ffffff;
         }
 
         p.subtitle {
             font-size: 1.1rem;
-            opacity: 0.9;
+            opacity: 0.8;
+            color: #b0b0b0;
         }
 
         /* Контейнер для фотографий */
@@ -50,18 +53,19 @@
             gap: 25px;
         }
 
-        /* Карточка фото */
+         /* Карточка фото (тёмный вариант) */
         .photo-card {
-            background: white;
+            background: #1e1e1e;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #333;
         }
 
         .photo-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         }
 
         .photo-card img {
@@ -69,6 +73,7 @@
             height: 250px;
             object-fit: cover;
             display: block;
+            border-bottom: 1px solid #333;
         }
 
         .photo-info {
@@ -109,7 +114,7 @@
 </head>
 <body>
     <header>
-        <h1>Моя фотолента</h1>
+        <h1>Котики</h1>
         <p class="subtitle">Листайте вниз, чтобы увидеть больше</p>
     </header>
 
@@ -117,61 +122,37 @@
         <!-- Фото 1 -->
         <div class="photo-card">
             <img src="images/cat1.jpg" alt="Природа">
-            <div class="photo-info">
-                <h3>Красивый пейзаж</h3>
-                <p>Горы, лес и река в одном кадре.</p>
-            </div>
         </div>
 
         <!-- Фото 2 -->
         <div class="photo-card">
             <img src="" alt="Город">
             <img src="images/cat2.jpg" alt="Город">
-            <div class="photo-info">
-                <h3>Ночной город</h3>
-                <p>Огни мегаполиса никогда не гаснут.</p>
-            </div>
         </div>
 
         <!-- Фото 3 -->
         <div class="photo-card">
             <img src="images/cat3.jpg" alt="Животное">
-            <div class="photo-info">
-                <h3>Дикая природа</h3>
-                <p>Момент из жизни обитателей саванны.</p>
-            </div>
         </div>
 
         <!-- Фото 4 -->
         <div class="photo-card">
             <img src="images/cat4.jpg" alt="Еда">
-            <div class="photo-info">
-                <h3>Вкусный ужин</h3>
-                <p>Ресторанная кухня может быть искусством.</p>
-            </div>
         </div>
 
         <!-- Фото 5 -->
         <div class="photo-card">
             <img src="images/cat5.jpg" alt="Путешествие">
-            <div class="photo-info">
-                <h3>Дорога к мечте</h3>
-                <p>Иногда путь важнее пункта назначения.</p>
-            </div>
         </div>
 
         <!-- Фото 6 -->
         <div class="photo-card">
             <img src="images/cat6.jpg" alt="Портрет">
-            <div class="photo-info">
-                <h3>Человеческие эмоции</h3>
-                <p>Глаза говорят больше, чем слова.</p>
-            </div>
         </div>
     </div>
 
     <footer>
-        <p>© 2023 Моя фотолента. Все права защищены.</p>
+        <p>©LinaLLLL. Все права защищены.</p>
     </footer>
 
     <script>
